@@ -1,9 +1,10 @@
 function mincost(arr)
 { 
 //write your code here
+	const length = arr.length
 	let total_cost = 0;
 	arr.sort(function(a,b){return a-b})
-	for(let i=0; i<arr.length+2; i++){
+	for(let i=0; i<length-1; i++){
 		let sum = 0;
 		for(let j=0; j<2; j++){
 			sum=sum+arr[j]
