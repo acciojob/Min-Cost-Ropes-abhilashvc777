@@ -11,7 +11,7 @@ function mincost(arr)
 		}
 		total_cost = total_cost+sum
     arr.splice(0,2,sum)
-    arr.sort()
+    arr.sort(function(a,b){return a-b;});
  }
 	// return the min cost
 	return total_cost
